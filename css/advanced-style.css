@@ -1,0 +1,46 @@
+/*页面底色，柔和浅灰 */
+body {
+  background-color: #f7f7fa !important;
+  color: #333 !important;
+}
+#page {
+  background-color: #f7f7fa !important;
+}
+
+/*首页文章卡片：改用scale缩放方案，避开位移被截断的bug */
+#recent-posts > .recent-post-item {
+  border-radius: 18px !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08) !important;
+  transition: all 0.3s ease !important;
+  overflow: visible !important;
+}
+#recent-posts > .recent-post-item:hover {
+  transform: scale(1.03) !important;
+  box-shadow: 0 14px 32px rgba(0,0,0,0.16) !important;
+}
+
+/*侧边栏卡片悬浮（你之前这个是生效的） */
+#aside-content .card-widget {
+  border-radius:16px !important;
+  box-shadow:0 2px 10px rgba(0,0,0,0.06) !important;
+  transition: all 0.3s ease !important;
+}
+#aside-content .card-widget:hover {
+  transform: translateY(-4px) !important;
+  box-shadow:0 8px 22px rgba(0,0,0,0.12) !important;
+}
+
+/*导航栏磨砂透明，滚动前后两套 */
+#nav,
+#page-header.nav-fixed #nav {
+  background: rgba(255,255,255,0.85) !important;
+  backdrop-filter: blur(8px) !important;
+  border: none !important;
+}
+
+/*分割线弱化 */
+hr {
+  border: 0 !important;
+  height:1px !important;
+  background:#e2e2eb !important;
+}
